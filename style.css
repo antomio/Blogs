@@ -10,22 +10,25 @@ body {
     width: 80%;
     min-height: 50%;
     margin: 0px auto;
+    background-color: black;
+    opacity: 0.5;
 }
 h1 {
     color: #cc2900;
     float: left;
     font-family: "Lucida Console",Times,serif;
     font-size: 95px;
+    font-weight: bold;
     margin: 0;
     position: relative;
     text-shadow: 2px 2px black;
 }
-#nav-bar {
+#header {
     display: block;
-}
-#nav-bar-right {
-    float: right;
     width: 77%;
+}
+#nav-bar {
+    float: right;
 }
 .top-content-left {
     float: left;
