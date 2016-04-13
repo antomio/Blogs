@@ -87,7 +87,11 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }*/
-
+body {
+    background-image: url(http://adocean.delfi.lv/files/x/zji/entrscl/xajkevmjdv/Mangali_Delfi_background_LV.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
 .wrapper {
     min-height: 960px;
     width: 960px;
@@ -111,26 +115,41 @@ li.dropdown {
     padding-top: 52px;
     box-sizing: border-box;
 }
-.navInlineList li {
-    border-right: 1px solid;
+.navInlineList li, .lowerNavBar li {
     display: inline-block;
     padding-left: 4px;
     padding-right: 9px;
     text-decoration: none;
 }
+.navInlineList li:not(:last-child), .lowerNavBar li:not(:last-child) {
+    border-right: 1px solid;
+}
+.lowerNavBar li {
+    font-size: 13px;
+}
 .headerTop {
     display: inline-flex;
 }
-.headerTopLeft {
+.headerBot {
+    width: inherit;
+}
+.headerTopLeft, .headerTopRight {
     width: 384px;
 }
-.headerTopRight {
-    width: 384px;
-}
+
 ul {
     margin: 0 auto;
     padding: 0;
 }
-.headerTop ul li {
+li, a {
     color: #595959;
+}
+.lowerNavBar {
+    width: inherit;
+    display: inline-flex;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
 }
