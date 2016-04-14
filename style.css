@@ -38,7 +38,7 @@ body {
 .lowerNavBar li {
     font-size: 13px;
 }
-.headerTop {
+.headerTop, .cityList {
     display: inline-flex;
 }
 .headerTopLeftBot, 
@@ -100,9 +100,17 @@ li, a {
 a {
     list-style: none;
     text-decoration: none;
+    font-weight: bold;
 }
 a:hover {
     color: #CCFFCC;
+}
+.headerTopLeftBot .dropdownWeatherCity a:hover {
+    color: #595959;
+}
+.arrow {
+    width: 16px;
+    background-image: url('img/arrow-down.png');
 }
 #header-weather-icon.wicon-09 {
     background-position: -166px -113px;
@@ -129,11 +137,35 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-.dropdownWeatherCity a img {
-    height: 16px;
-    width: 16px;
-}
 .headerTopLeftBot ul, 
 .headerTopLeftBot .dropdownWeatherCity {
     height: 50%;
+    width: 100%;
 }
+.headerTopLeftBot {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+
+    -webkit-flex-flow: row wrap;
+}
+.dropdownWeatherCity {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row-reverse;
+
+    -webkit-flex-flow: row wrap;
+}
+.cityList:hover {
+    color: #CCFFCC;
+}
+
+
