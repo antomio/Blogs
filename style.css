@@ -161,6 +161,22 @@ input[type=submit] {
 
     -webkit-flex-flow: row wrap;
 }
+.dropdownContent {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdownContent a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+}
+.show {
+    display: block;
+}
 
 
 
