@@ -87,8 +87,11 @@ ul {
     -webkit-flex-flow: row wrap;
     justify-content: center;
 }
-li, a {
+li, a, .dropdownContent ul li a {
     color: #595959;
+}
+.dropdownContent ul li a:hover {
+    background-color: #CCFFCC;
 }
 .lowerNavBar {
     width: inherit;
@@ -106,8 +109,10 @@ a {
     color: #CCFFCC;
 }
 .arrow {
+    height: 16px;
     width: 16px;
     background-image: url('img/arrow-down.png');
+    cursor: pointer;
 }
 #header-weather-icon.wicon-09 {
     background-position: -166px -113px;
@@ -150,6 +155,13 @@ input[type=submit] {
 
     -webkit-flex-flow: row wrap;
 }
+
+
+/*dropdown*/
+
+.dropdownBtn {
+    position: relative;
+}
 .dropdownWeatherCity {
     width: 100%;
     display: -webkit-box;
@@ -163,19 +175,27 @@ input[type=submit] {
 }
 .dropdownContent {
     display: none;
+    background-color: #e6ffcc;
+    left: 0px;
+    top: 16px;
     position: absolute;
-    min-width: 160px;
+    min-width: 110px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .dropdownContent a {
     display: block;
-    padding: 12px 16px;
+    padding: 12px 12px;
     text-decoration: none;
     color: black;
 }
-.show {
+
+.dropdownBtn:hover .dropdownContent {
     display: block;
+    padding: 0px;
+}
+.linkNotHover {
+    padding: 0px;
 }
 
 
