@@ -38,8 +38,9 @@ body {
 .lowerNavBar li {
     font-size: 13px;
 }
-.headerTop, .cityList {
+.headerTop, p {
     display: inline-flex;
+    margin: 0px;
 }
 .headerTopLeftBot, 
 .headerTopLeftTop, 
@@ -109,9 +110,7 @@ a {
     color: #CCFFCC;
 }
 .arrow {
-    height: 16px;
-    width: 16px;
-    background-image: url('img/arrow-down.png');
+    background: center right url('img/arrow-down.png') no-repeat;
     cursor: pointer;
 }
 #header-weather-icon.wicon-09 {
@@ -195,8 +194,53 @@ input[type=submit] {
     padding: 0px;
 }
 .linkNotHover {
-    padding: 0px;
+    padding-right: 20px;
 }
+
+
+/*content*/
+
+
+.content {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    -webkit-flex-flow: row wrap;
+    background-color: #fff;
+    width: inherit;
+    height: inherit;
+}
+.contentLeftColumn, .contentRightColumn {
+    display: inline-flex;
+}
+.contentLeftColumn {
+    width: 80%;
+    border-right: 1px solid;
+    border-color: #73e600;
+}
+.contentRighttColumn {
+    width: 20%;
+}
+.topRowBig {
+    display: inline-flex;
+    justify-content:space-around;
+}
+.picContainer1, .picContainer2 {
+    display: inline-flex;
+    width: 40%;
+}
+.picBig {
+    display: inline-flex;
+}
+.red {
+    color: red;
+}
+
+
 
 
 
