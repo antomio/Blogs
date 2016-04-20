@@ -208,7 +208,7 @@ input[type=submit] {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     -webkit-flex-flow: row wrap;
     background-color: #fff;
     width: inherit;
@@ -216,9 +216,10 @@ input[type=submit] {
 }
 .contentLeftColumn, .contentRightColumn {
     display: inline-flex;
+
 }
 .contentLeftColumn {
-    width: 80%;
+    width: 74%;
     border-right: 1px solid;
     border-color: #73e600;
 }
@@ -226,18 +227,34 @@ input[type=submit] {
     width: 20%;
 }
 .topRowBig {
-    display: inline-flex;
-    justify-content:space-around;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    width: 100%;
 }
 .picContainer1, .picContainer2 {
     display: inline-flex;
-    width: 40%;
+    display: block;
+    margin: 15px;
+    width: 46%;
 }
 .picBig {
     display: inline-flex;
+    width: 100%;
 }
 .red {
     color: red;
+}
+h1 {
+    padding: 0px;
+    margin: 0px;
+}
+.banner {
+    margin: 15px;
 }
 
 
