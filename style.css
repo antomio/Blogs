@@ -214,17 +214,10 @@ input[type=submit] {
     width: inherit;
     height: inherit;
 }
-.contentLeftColumn, .contentRightColumn {
-    display: flex;
-
-    -webkit-flex-flow: row wrap;
-
-}
 .contentLeftColumn {
     width: 74%;
     border-right: 1px solid;
     border-color: #73e600;
-    flex-wrap: wrap;
 }
 .contentRighttColumn {
     width: 20%;
@@ -249,7 +242,6 @@ input[type=submit] {
     display: inline-flex;
     display: block;
     margin: 15px;
-    /*width: 30%;*/
     font-size: 9px;
 }
 .picFrame {
@@ -265,7 +257,6 @@ input[type=submit] {
 }
 .banner {
     margin: 15px;
-    max-height: 400px;
 }
 .treadTitle {
     background-color: #0372dd;
@@ -287,18 +278,25 @@ input[type=submit] {
     list-style: none;
     font-weight: bold;
 }
-.picContainer1 ul li a:not(.comment-count) {
-    display: block;
+.picContainer1 ul li time {
+    color: #0372dd;
+    margin-right: 2%;
+}
+.picContainer1 ul {
+    padding: 4%;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    margin: 5% 0%;
     border-bottom: 1px solid;
     border-color: #d9d9d9;
 }
-.picContainer1 ul li time {
-    color: #0372dd;
-    display: flex;
-}
-.title {
-    margin: 5% 2%;
-    padding: 4%;
+.picContainer3 {
+    display: block;
+    margin: 15px;
+    width: 100%;
 }
 
 
