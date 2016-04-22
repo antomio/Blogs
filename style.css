@@ -299,6 +299,42 @@ input[type=submit] {
     width: 100%;
 }
 
+/*Footer*/
+
+.footer {
+    margin: 15px 0 15px 0;
+}
+.sitemap {
+    display: flex;
+
+}
+.sitemapCol1 {
+    
+    display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-flex-flow: column wrap;
+   flex-flow: column wrap;
+   -webkit-align-content: center;
+   align-content: center;
+    padding: 2%;
+    border-right: 1px solid;
+    border-color: #595959;
+}
+.sitemapCol11 {
+    display: -webkit-flex;
+   display: flex;
+
+}
+.sitemapCol12 {
+    display: -webkit-flex;
+   display: flex;
+  
+}
+
 
 
 
